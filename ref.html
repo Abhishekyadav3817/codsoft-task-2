@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="creative sheet.css"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            /* display: flex; */
+            flex-direction: column;
+            width: 100%;
+        }
+
+        header::before {
+            content: " ";
+            background: url("GIRL.jpg") no-repeat center center/cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 85%;
+            z-index: -1;
+        }
+
+        #navbar ul {
+            display: flex;
+        }
+
+        #navbar ul li {
+            list-style: none;
+            padding: 20px;
+        }
+
+        #navbar ul li a {
+            font-size: 1.1rem;
+            padding: 10px;
+            border-radius: 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        #navbar ul li a:hover {
+            color: black;
+            background-color: white;
+        }
+
+
+        #navbar {
+            background-color: rgb(40, 40, 60);
+            position: relative;
+            display: flex;
+            /* opacity: 0.8; */
+            justify-content: center;
+            align-items: center;
+            top: 0;
+            /* width: 1000px; */
+        }
+
+        .h2 {
+            color: white;
+            padding: 0 40px;
+        }
+
+        /* CONTENT */
+        #content1 {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+            margin: 155px auto;
+            text-shadow: 3px 3px 5px white;
+        }
+
+        #content1 h1 {
+            font-size: 3rem;
+        }
+
+        #content1 .tech {
+            color: black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #content1 .tech p {
+            padding: 10px 0px 45px 0px;
+            font-size: 1.2rem;
+        }
+
+        .btn ul {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn ul li a {
+            box-shadow: 3px 3px 6px grey;
+        }
+
+        .btn ul li a {
+            margin: 20px;
+            padding: 15px;
+            border-radius: 50px;
+            text-decoration: none;
+            color: black;
+            background-color: rgb(42, 202, 160);
+        }
+
+        .btn ul li {
+            list-style: none;
+        }
+
+        .btn ul li a:active {
+            background-color: rgb(72, 230, 177);
+        }
+
+        /* CONTINER */
+        #container1 {
+            display: flex;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #container1 .box {
+            height: 140px;
+            width: 50%;
+            padding: 20px;
+            margin-bottom: 40px;
+            margin: 0 95px;
+        }
+
+        #container1 h4 {
+            color: rgb(28, 231, 164);
+        }
+
+        #container1 #box1 p {
+            font-size: 1.8rem;
+            padding: 10px;
+            margin: 0 20px;
+        }
+
+        #container1 #box2 p {
+            font-size: 1.3rem;
+            padding: 20px;
+            line-height: 1.6rem;
+
+        }
+
+        /* LOGOS */
+        #container2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #container2 .logo img {
+            width: 70px;
+            height: 70px;
+            padding: 30px 30px 0px 30px;
+            margin: 30px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        #container2 .logo {
+            width: 195px;
+            height: 195px;
+            margin: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: 2px solid white;
+            border-radius: 30px;
+            padding: 55px;
+
+            box-shadow: 3px 3px 3px grey;
+
+        }
+
+        #container2 .logo img:hover {
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        #container2 #logo2 img:hover {
+            width: 110px;
+        }
+
+        #container3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-bottom: 80px;
+        }
+
+        #container3 .logo img {
+            width: 70px;
+            height: 70px;
+            padding: 30px 30px 0px 30px;
+            margin: 30px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        #container3 .logo img:hover {
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        #container3 #logo8 img:hover {
+            height: 90px;
+            width: 140px;
+        }
+
+        #container3 #logo7 img:hover {
+            width: 115px;
+            height: 115px;
+        }
+
+
+
+        #container3 .logo {
+            width: 195px;
+            height: 195px;
+            margin: 50px;
+            /* margin-left: 80px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: 2px solid white;
+            border-radius: 30px;
+            padding: 55px;
+
+            box-shadow: 3px 3px 3px grey;
+        }
+
+        #container3 #logo8 img {
+            width: 120px;
+
+        }
+
+        #container3 #logo7 img {
+            height: 90px;
+            width: 100px;
+        }
+
+        #container2 #logo2 img {
+            width: 90px;
+        }
+
+        #container2 .logo p {
+            text-align: center;
+            padding: 10px 20px 10px 20px;
+            line-height: 1.3rem;
+        }
+
+        #container3 .logo p {
+            text-align: center;
+            padding: 10px 20px 10px 20px;
+            line-height: 1.3rem;
+        }
+
+        /* SECTION4 */
+        #container4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #container4 #text {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            width: 50%;
+            padding-top: 130px;
+            padding-bottom: 130px;
+            margin: 2px;
+        }
+
+        #container4 #text h1 {
+            font-size: 2.7rem;
+            padding: 125px;
+            padding-top: 3px;
+            padding-bottom: 20px;
+        }
+
+        #container4 h4 {
+            color: rgb(28, 231, 164);
+            padding: 20px;
+            padding-left: 90px;
+            padding-bottom: 0;
+        }
+
+        #container4 #text p {
+            padding: 0px 150px 56px 125px;
+            line-height: 1.5rem;
+        }
+
+        #container4 #employee {
+            width: 50%;
+            padding: 30px;
+        }
+
+        #container4 #employee img {
+            box-shadow: 5px 5px 10px grey;
+            width: 700px;
+            height: 550px;
+        }
+
+        /* section5 */
+        #container5 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #container5 .image img {
+            width: 150px;
+            height: 150px;
+            margin: 50px;
+            padding: 40px;
+            z-index: 2;
+        }
+
+        #container5::before {
+            content: " ";
+            background: url("laptop\ bg.jpg") no-repeat center center/cover;
+            opacity: 0.9;
+            z-index: -1;
+            left: 0;
+            position: absolute;
+            width: 100%;
+            height: 40%;
+        }
+
+        @media only screen and (min-width:1350px) and (max-width:1550px) {
+
+            #container1 .box {
+                margin: 50px 50px;
+            }
+
+            #container1 #box1 p {
+                font-size: 2rem;
+            }
+
+            #container1 #box2 p {
+                font-size: 1.4rem;
+                padding: 0px;
+                margin: 0px;
+                line-height: 1.5rem;
+
+            }
+
+            #container2 .logo {
+                height: 170px;
+                width: 170px;
+                margin: 38px;
+                padding: 40px;
+
+            }
+
+            #container2 .logo img {
+                padding: 20px 20px 0px 20px;
+                margin: 20px;
+            }
+
+            #container3 {
+                margin-bottom: 30px;
+            }
+
+            #container3 .logo {
+                height: 175px;
+                width: 170px;
+                margin: 38px;
+                padding: 40px;
+            }
+
+            #container3 .logo img {
+                padding: 20px 20px 0px 20px;
+                margin: 20px;
+            }
+
+            #container3 #logo7 img {
+                height: 78px;
+                width: 88px;
+            }
+
+            #container4 #employee img {
+
+                width: 670px;
+
+            }
+
+            #container4 #text {
+                padding-top: 70px;
+
+            }
+
+        }
+
+        @media only screen and (min-width:1200px) and (max-width:1350px) {
+
+
+            #container1 h4 {
+                padding: 20px;
+                padding-left: 30px;
+                padding-bottom: 0px;
+            }
+
+            #container1 .box {
+                margin: 0px 50px;
+            }
+
+            #container1 #box1 p {
+                font-size: 1.8rem;
+            }
+
+            #container1 #box2 p {
+                font-size: 1.3rem;
+                padding: 0px;
+                margin: 0px;
+                line-height: 1.4rem;
+
+            }
+
+            #container2 .logo {
+                height: 175px;
+                width: 165px;
+                margin: 30px;
+                padding: 38px;
+
+            }
+
+            #container2 .logo img {
+                padding: 20px 20px 0px 20px;
+                margin: 20px;
+            }
+
+            #container3 {
+                margin-bottom: 30px;
+            }
+
+            #container3 .logo {
+                height: 175px;
+                width: 165px;
+                margin: 30px;
+                padding: 38px;
+            }
+
+            #container3 .logo img {
+                padding: 20px 20px 0px 20px;
+                margin: 20px;
+            }
+
+            #container3 #logo7 img {
+                height: 78px;
+                width: 88px;
+            }
+
+            #container4 #employee img {
+
+                width: 620px;
+                height: 500px;
+
+            }
+
+            #container4 #text {
+                padding-top: 70px;
+                padding-bottom: 100px;
+            }
+
+            #container4 #text h1 {
+                font-size: 2.5rem;
+            }
+
+            #container5 .image img {
+                width: 150px;
+                height: 150px;
+                margin: 30px;
+                padding: 40px;
+                padding-top: 60px;
+                padding-bottom: 60px;
+
+
+            }
+
+
+
+        }
+
+        @media only screen and (min-width:1050px) and (max-width:1200px) {
+
+
+            #container1 h4 {
+                padding: 20px;
+                padding-left: 30px;
+                padding-bottom: 0px;
+            }
+
+            #container1 .box {
+                margin: 0px 50px;
+            }
+
+            #container1 #box1 p {
+                font-size: 1.8rem;
+            }
+
+            #container1 #box2 p {
+                font-size: 1.3rem;
+                padding: 0px;
+                margin: 0px;
+                line-height: 1.4rem;
+
+            }
+
+            #container2 .logo {
+                height: 180px;
+                width: 150px;
+                margin: 20px;
+                padding: 30px;
+            }
+
+            #container2 .logo img {
+                width: 65px;
+                height: 65px;
+            }
+
+            #container3 .logo img {
+                width: 65px;
+                height: 65px;
+            }
+
+            #container2 .logo img {
+                padding: 20px 20px 0px 20px;
+                margin: 20px;
+            }
+
+            #container3 {
+                margin-bottom: 30px;
+            }
+
+            #container3 .logo {
+                height: 180px;
+                width: 150px;
+                margin: 20px;
+                padding: 30px;
+            }
+
+            #container3 .logo img {
+                padding: 20px 20px 0px 20px;
+                margin: 20px;
+            }
+
+            #container3 #logo7 img {
+                height: 78px;
+                width: 88px;
+            }
+
+            #container4 #employee img {
+
+                width: 500px;
+                height: 460px;
+
+            }
+
+            #container4 #text h1 {
+                font-size: 2.5rem;
+                padding: 100px;
+                padding-top: 3px;
+                padding-bottom: 20px;
+            }
+
+            #container4 #text {
+                padding-top: 50px;
+                padding-bottom: 100px;
+            }
+
+            #container4 #text h1 {
+                font-size: 2.5rem;
+            }
+
+            #container4 #employee {
+                width: 500px;
+                height: 500px;
+                padding: 30px;
+            }
+
+
+            #container4 #text p {
+                padding: 0px 110px 56px 105px;
+                line-height: 1.5rem;
+            }
+
+            #container5 .image img {
+                width: 130px;
+                height: 130px;
+                margin: 30px;
+                padding: 35px;
+                padding-top: 72px;
+                padding-bottom: 72px;
+            }
+
+            #container3 #logo7 img {
+                height: 70px;
+                width: 88px;
+            }
+
+            #container3 #logo8 img {
+                width: 95px;
+            }
+
+            #container2 .logo img:hover {
+                width: 80px;
+                height: 80px;
+                margin: 5px;
+                padding: 5px;
+            }
+
+            #container3 .logo img:hover {
+                width: 80px;
+                height: 80px;
+                margin: 5px;
+                padding: 5px;
+            }
+
+            #container3 #logo8 img:hover {
+                height: 90px;
+                width: 115px;
+            }
+
+            #container3 #logo7 img:hover {
+                width: 95px;
+                height: 90px;
+            }
+
+            #container3 #logo8 p {
+                padding-bottom: 0px;
+            }
+        }
+
+
+
+        @media only screen and (min-width:900px) and (max-width:1050px) {
+
+            #content1 {
+                width: 600px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding: 30px;
+                margin: 162px 130px 175px 130px;
+                text-shadow: 3px 3px 5px white;
+            }
+
+
+            #container1 h4 {
+                padding: 20px;
+                padding-left: 30px;
+                padding-bottom: 0px;
+            }
+
+            #container1 .box {
+                margin: 0px 15px;
+            }
+
+            #container1 #box1 p {
+                font-size: 1.8rem;
+            }
+
+            #container1 #box2 p {
+                font-size: 1.3rem;
+                padding: 0px;
+                margin: 0px;
+                line-height: 1.4rem;
+
+            }
+
+            #container2 .logo {
+                height: 215px;
+                width: 135px;
+                margin: 20px;
+                padding: 15px;
+            }
+
+            #container2 .logo img {
+                width: 65px;
+                height: 65px;
+            }
+
+            #container3 .logo img {
+                width: 65px;
+                height: 65px;
+            }
+
+            #container2 .logo img {
+                padding: 20px 20px 0px 20px;
+                margin: 20px;
+            }
+
+            #container3 {
+                margin-bottom: 30px;
+            }
+
+            #container3 .logo {
+                height: 215px;
+                width: 135px;
+                margin: 20px;
+                padding: 15px;
+            }
+
+            #container3 .logo img {
+                padding: 20px 20px 0px 20px;
+                margin: 20px;
+            }
+
+            #container3 #logo7 img {
+                height: 78px;
+                width: 88px;
+            }
+
+            #container4 #employee img {
+
+                width: 430px;
+                height: 400px;
+
+            }
+
+            #container4 #text h1 {
+                font-size: 2.1rem;
+                padding: 65px;
+                padding-top: 3px;
+                padding-bottom: 20px;
+            }
+
+            #container4 #text {
+                padding-top: 50px;
+                padding-bottom: 100px;
+            }
+
+
+            #container4 #employee {
+                width: 450px;
+                height: 410px;
+                padding: 30px;
+            }
+
+
+            #container4 #text p {
+                padding: 0px 95px 56px 65px;
+                line-height: 1.5rem;
+            }
+
+            #container4 h4 {
+                padding-left: 65px;
+            }
+
+            #container5 .image img {
+                width: 130px;
+                height: 140px;
+                margin: 20px;
+                padding: 25px;
+                padding-top: 45px;
+                padding-bottom: 25px;
+            }
+
+            #container5::before {
+
+                height: 30%;
+            }
+
+            #container3 #logo7 img {
+                height: 70px;
+                width: 88px;
+            }
+
+            #container3 #logo8 img {
+                width: 95px;
+            }
+
+            #container2 .logo img:hover {
+                width: 80px;
+                height: 80px;
+                margin: 5px;
+                padding: 5px;
+            }
+
+            #container3 .logo img:hover {
+                width: 80px;
+                height: 80px;
+                margin: 5px;
+                padding: 5px;
+            }
+
+            #container3 #logo8 img:hover {
+                height: 90px;
+                width: 115px;
+            }
+
+            #container3 #logo7 img:hover {
+                width: 95px;
+                height: 90px;
+            }
+
+
+            #container3 #logo8 p {
+                padding-bottom: 0px;
+            }
+        }
+
+
+
+        @media only screen and (min-width:750px) and (max-width:900px) {
+
+            #content1 {
+                width: 600px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding: 30px;
+                margin: 162px auto;
+                text-shadow: 3px 3px 5px white;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            #navbar ul li a {
+                padding: 0px;
+            }
+
+            #container1 h4 {
+                padding: 20px;
+                padding-left: 30px;
+                padding-bottom: 0px;
+            }
+
+            #container1 .box {
+                margin: 0px 15px;
+                height: 200px;
+            }
+
+            #container1 #box1 p {
+                font-size: 1.8rem;
+            }
+
+            #container1 #box2 p {
+                font-size: 1.3rem;
+                padding: 0px;
+                margin: 0px;
+                line-height: 1.4rem;
+
+            }
+
+            #container2 {
+                flex-direction: column;
+            }
+
+            #container2 .logo p {
+                font-size: 1.3rem;
+            }
+
+            #container2 .logo {
+                height: 200px;
+                width: 600px;
+                margin: 35px;
+                padding: 15px;
+            }
+
+            #container2 .logo img {
+                width: 100px;
+                height: 100px;
+            }
+
+            #container3 .logo img {
+                width: 100px;
+                height: 100px;
+            }
+
+            #container2 .logo img {
+                padding: 20px 20px 0px 20px;
+                margin: 20px;
+            }
+
+            #container3 {
+                margin-bottom: 30px;
+                flex-direction: column;
+            }
+
+            #container3 .logo {
+                height: 200px;
+                width: 600px;
+                margin: 35px;
+                padding: 15px;
+            }
+
+            #container3 .logo img {
+                padding: 20px 20px 0px 20px;
+                margin: 20px;
+            }
+
+            #container3 #logo7 img {
+                height: 78px;
+                width: 88px;
+            }
+
+            #container4 #employee img {
+                width: 400px;
+                height: 335px;
+            }
+
+            #container4 #text h1 {
+                font-size: 1.6rem;
+                padding: 65px;
+                padding-top: 3px;
+                padding-right: 0px;
+                padding-bottom: 7px;
+            }
+
+            #container4 #text {
+                padding-top: 50px;
+                padding-bottom: 18px;
+            }
+
+            hr {
+                display: none;
+            }
+
+
+            #container4 #employee {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 450px;
+                height: 355px;
+                padding: 30px;
+            }
+
+
+            #container4 #text p {
+                padding: 0px 0px 56px 65px;
+                line-height: 1.4rem;
+            }
+
+            #container4 h4 {
+                padding-left: 65px;
+            }
+
+            #container5 .image img {
+                width: 100px;
+                height: 100px;
+                margin: 20px;
+                padding: 25px;
+                padding-top: 45px;
+                padding-bottom: 25px;
+            }
+
+            #container5::before {
+
+                height: 30%;
+            }
+
+            #container3 #logo7 img {
+                height: 170px;
+                width: 120px;
+            }
+
+            #container3 #logo8 img {
+                width: 150px;
+            }
+
+            #container2 .logo img:hover {
+                width: 130px;
+                height: 130px;
+                margin: 5px;
+                padding: 5px;
+            }
+
+            #container3 .logo img:hover {
+                width: 130px;
+                height: 130px;
+                margin: 5px;
+                padding: 5px;
+            }
+
+            #container3 #logo8 img:hover {
+                height: 110px;
+                width: 180px;
+            }
+
+            #container3 #logo7 img:hover {
+                height: 190px;
+                width: 140px;
+            }
+
+            #container3 #logo8 p {
+                padding-bottom: 0px;
+            }
+        }
+
+
+        @media only screen and (min-width:600px) and (max-width:750px) {
+
+            #content1 {
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding: 30px;
+                margin: 160px auto;
+                text-shadow: 3px 3px 5px white;
+            }
+
+            #content1 h1 {
+                font-size: 2.4rem;
+            }
+
+
+            #content1 .tech p {
+                width: 350px;
+                padding: 10px 20px 40px 20px;
+                font-size: 1.2rem;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            .h2 {
+                padding: 0px 15px;
+            }
+
+            #navbar ul li a {
+                padding: 0px;
+            }
+
+            #navbar ul li {
+                padding: 10px;
+            }
+
+            #container1 h4 {
+                padding: 20px;
+                padding-left: 10px;
+                padding-bottom: 0px;
+            }
+
+            #container4 {
+                flex-direction: column;
+            }
+
+            #container1 .box {
+                margin: 0px;
+                padding: 0px;
+            }
+
+            #container1 #box1 p {
+                font-size: 2.5rem;
+                margin: 0px;
+            }
+
+            #container1 #box2 p {
+                text-align: start;
+                font-size: 1.4rem;
+                padding: 12px;
+                margin: 0px;
+                line-height: 1.4rem;
+
+            }
+
+            #container1 {
+                height: 400px;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            #container2 {
+                flex-direction: column;
+            }
+
+            #container2 .logo p {
+                font-size: 1.3rem;
+            }
+
+            #container2 .logo {
+                height: 240px;
+                width: 410px;
+                margin: 35px;
+                padding: 15px;
+            }
+
+            #container2 .logo img {
+                width: 100px;
+                height: 100px;
+            }
+
+            #container3 .logo img {
+                width: 100px;
+                height: 100px;
+            }
+
+            #container2 .logo img {
+                padding: 20px 20px 0px 20px;
+                margin: 20px;
+            }
+
+            #container3 {
+                margin-bottom: 30px;
+                flex-direction: column;
+            }
+
+            #container3 .logo {
+                height: 240px;
+                width: 410px;
+                margin: 35px;
+                padding: 15px;
+            }
+
+            #container3 .logo img {
+                padding: 20px 20px 0px 20px;
+                margin: 20px;
+            }
+
+            #container3 #logo7 img {
+                height: 78px;
+                width: 88px;
+            }
+
+            #container4 #employee img {
+                width: 465px;
+                height: 335px;
+            }
+
+            #container4 #text h1 {
+                font-size: 2.5rem;
+                padding: 0px;
+                padding-top: 3px;
+                padding-right: 0px;
+                padding-bottom: 7px;
+                margin: 0px 0px 0px 15px;
+            }
+
+            #container4 #text {
+                width: 450px;
+                padding-top: 50px;
+                padding-bottom: 18px;
+            }
+
+            hr {
+                display: none;
+            }
+
+
+            #container4 #employee {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 450px;
+                height: 415px;
+                padding: 30px;
+            }
+
+
+            #container4 #text p {
+                margin: 0px 0px 0px 15px;
+                padding: 0px;
+                line-height: 1.6rem;
+                font-size: 1.3rem;
+            }
+
+            #container4 h4 {
+                margin: 0px 0px 0px 15px;
+                padding-left: 0px;
+            }
+
+            #container5 .image img {
+                width: 65px;
+                height: 65px;
+                margin: 15px;
+                padding: 10px;
+                padding-top: 45px;
+                padding-bottom: 25px;
+            }
+
+            #container5::before {
+
+                height: 30%;
+            }
+
+            #container3 #logo7 img {
+                height: 170px;
+                width: 120px;
+            }
+
+            #container3 #logo8 img {
+                width: 150px;
+            }
+
+            #container2 .logo img:hover {
+                width: 130px;
+                height: 130px;
+                margin: 5px;
+                padding: 5px;
+            }
+
+            #container3 .logo img:hover {
+                width: 130px;
+                height: 130px;
+                margin: 5px;
+                padding: 5px;
+            }
+
+            #container3 #logo8 img:hover {
+                height: 110px;
+                width: 180px;
+            }
+
+            #container3 #logo7 img:hover {
+                height: 190px;
+                width: 140px;
+            }
+
+
+            #container3 #logo8 p {
+                padding-bottom: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <h2 class="h2">Co-working</h2>
+            <ul>
+                <li><a href="#">Home</a> </li>
+                <li><a href="#">About</a> </li>
+                <li><a href="#">Benefits</a> </li>
+                <li><a href="#">Blog</a> </li>
+                <li><a href="#">View</a> </li>
+        </nav>
+    </header>
+    <section id="content1">
+        <div class="tech">
+            <div class="technology">TECHNOLOGY</div>
+            <h1>Creative Space</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, totam! Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit. Eius eligendi sed sapiente sint fuga porro
+                inventore ex itaque, obcaecati enim libero corrupti natus omnis facere optio saepe reprehenderit
+                quidem possminus fac</p>
+            <div class="btn">
+                <ul>
+                    <li><a href="#">Get Started</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div id="container1">
+            <div id="box1" class="box">
+                <h4>BENIFITS</h4>
+                <p>Your comfort is our priority</p>
+            </div>
+            <div id="box2" class="box">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore dicta temporibus natus,
+                    tempore nihil a? Quod dolor placeat quaerat totam facilis eaque quisquam labore sunt ducimus
+                    itaque ipsam cumque, sint, minima iusto error rerum adipisci blanditiis, ullam fugit beatae
+                    inventore.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="container2">
+
+
+            <div id="logo1" class="logo">
+                <img src="email.png" alt="error">
+                <h3>Mail</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing el</p>
+            </div>
+            <div id="logo2" class="logo">
+                <img src="visual.png" alt="error">
+                <h3>visual</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing el</p>
+            </div>
+            <div id="logo3" class="logo">
+                <img src="file.png" alt="error">
+                <h3>File</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing el</p>
+
+            </div>
+            <div id="logo4" class="logo">
+                <img src="calender.png" alt="error">
+                <h3>Calender</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing el</p>
+            </div>
+
+        </div>
+        <div id="container3">
+
+            <div id="logo5" class="logo">
+                <img src="suitcase.png" alt="error">
+                <h3>Suitcase</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing el</p>
+            </div>
+            <div id="logo6" class="logo">
+                <img src="chat.png" alt="error">
+                <h3>Chat</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing el</p>
+            </div>
+            <div id="logo7" class="logo">
+                <img src="global.png" alt="error">
+                <h3>Global</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing el</p>
+            </div>
+            <div id="logo8" class="logo">
+                <img src="sites.png" alt="error">
+                <h3>Sites</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing el</p>
+
+            </div>
+
+        </div>
+    </section>
+    <section>
+        <div id="container4">
+            <div id="text">
+                <h4>WHO &nbsp WE &nbsp ARE</h4>
+                <h1>We're Creative Coworking Working Space For Sucsess</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dignissimos commodi, similique
+                    doloribus odit quidem architecto aperiam consectetur, vitae doloremque exercitationem quae incidunt.
+                    Mollitia eos qui consequatur tenetur provident quae.</p>
+
+            </div>
+            <div id="employee">
+                <img src="office employeee.jpg" alt="error">
+
+
+            </div>
+
+        </div>
+
+    </section>
+    <hr>
+    <section>
+        <div id="container5">
+
+            <div class="image">
+                <img src="Apple logo.png" alt="">
+
+            </div>
+            <div class="image">
+                <img src="Microsoft logo.png" alt="">
+
+            </div>
+            <div class="image">
+                <img src="Skype logo.png" alt="">
+
+            </div>
+            <div class="image">
+                <img src="Hp logo.png" alt="">
+
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
